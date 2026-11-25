@@ -1,0 +1,64 @@
+{
+ "schema_version": "banana.visual-brief.v1",
+ "goal": "Warm Modern design concept for the living area (drawing room) of the user's flat, from the living-room photo angle.",
+ "facts": [
+  "Drawing room is 11'6\" x 19'0\", open to a 9'6\" x 13'3\" dining area.",
+  "Tall black-framed sliding glass doors on the left open to a balcony with trees beyond."
+ ],
+ "locks": [
+  "Same camera position, framing and perspective as reference 1.",
+  "Walls, column, beams, ceiling height, door and window openings, sliding glass door positions with black frames, and the large-format beige marble-look floor tiles stay where they are.",
+  "No people in the image."
+ ],
+ "freedoms": [
+  "Furniture, decor, lighting fixtures, ceiling design, curtains and styling props."
+ ],
+ "direction": {
+  "mode": "creative",
+  "thesis": "Warm, calm, sunlit modern Indian home in ivory limewash, walnut and soft brass.",
+  "signature": "Backlit honey onyx TV panel framed by full-height walnut fluted panels.",
+  "avoid": "Generic grey showroom look with glossy white furniture and cold lighting."
+ },
+ "composition": [
+  "TV feature wall on the far wall; curved sofa in the foreground facing it."
+ ],
+ "rendering": [
+  "Photorealistic interior photograph, eye-level wide angle, warm late-afternoon sun plus 3000K cove light, natural colours."
+ ],
+ "typography": {
+  "exact_copy": [],
+  "instructions": []
+ },
+ "references": [
+  {
+   "disclosure_alias": "living room photo (man removed)",
+   "role": "object",
+   "purpose": "preserve room architecture, openings and camera viewpoint",
+   "subject_id": "hall",
+   "authority": {
+    "rights_or_license": "affirmed",
+    "identity_or_likeness": "not_applicable",
+    "customer_or_private_asset": "affirmed",
+    "endorsement_or_representation": "not_applicable",
+    "provider_transmission": "affirmed",
+    "intended_use": "Private interior design concept preview of the user's own flat; not for publication."
+   }
+  }
+ ],
+ "output": {
+  "aspect_ratio": "4:3",
+  "image_size": "1K",
+  "mime_type": "image/jpeg",
+  "delivery_notes": [
+   "Viewed on a phone as a design concept."
+  ]
+ },
+ "review_tests": [
+  "Room architecture, openings and camera viewpoint match reference 1.",
+  "Floor is the same polished beige large-format tile.",
+  "No people, logos or lettering are visible.",
+  "Palette reads as ivory limewash, walnut, soft brass with sage and terracotta accents.",
+  "TV wall shows backlit stone centre panel with walnut fluting and floating console.",
+  "Bedroom doorway on the right keeps its walnut frame."
+ ]
+}

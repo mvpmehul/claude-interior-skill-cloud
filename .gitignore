@@ -2,3 +2,10 @@ __pycache__/
 *.pyc
 .env
 .env.*
+
+# Photos and generated designs of the home stay out of this public repo
+designs/**/*.jpg
+designs/**/*.jpeg
+designs/**/*.png
+designs/**/*.webp
+designs/**/*.heic

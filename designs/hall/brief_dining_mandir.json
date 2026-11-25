@@ -1,0 +1,64 @@
+{
+ "schema_version": "banana.visual-brief.v1",
+ "goal": "Warm Modern design concept for the dining end of the hall with a mandir wall, from the dining-end photo angle.",
+ "facts": [
+  "The far wall currently holds a temporary builder poster display, to be replaced.",
+  "A wash basin sits in a niche at the left; sliding glass doors on the right open to the balcony."
+ ],
+ "locks": [
+  "Same camera position, framing and perspective as reference 1.",
+  "Walls, column, beams, ceiling height, door and window openings, sliding glass door positions with black frames, and the large-format beige marble-look floor tiles stay where they are.",
+  "No people in the image."
+ ],
+ "freedoms": [
+  "Furniture, decor, lighting fixtures, ceiling design, curtains and styling props."
+ ],
+ "direction": {
+  "mode": "creative",
+  "thesis": "Warm, calm, sunlit modern Indian home in ivory limewash, walnut and soft brass.",
+  "signature": "Backlit brass lotus jaali mandir in walnut on a calm ivory limewash wall.",
+  "avoid": "Generic grey showroom look with glossy white furniture and cold lighting."
+ },
+ "composition": [
+  "Mandir centred on the far wall; dining table in front on the right; basin vanity at left."
+ ],
+ "rendering": [
+  "Photorealistic interior photograph, eye-level wide angle, warm late-afternoon sun plus 3000K cove light, natural colours."
+ ],
+ "typography": {
+  "exact_copy": [],
+  "instructions": []
+ },
+ "references": [
+  {
+   "disclosure_alias": "dining end photo",
+   "role": "object",
+   "purpose": "preserve room architecture, openings and camera viewpoint",
+   "subject_id": "hall",
+   "authority": {
+    "rights_or_license": "affirmed",
+    "identity_or_likeness": "not_applicable",
+    "customer_or_private_asset": "affirmed",
+    "endorsement_or_representation": "not_applicable",
+    "provider_transmission": "affirmed",
+    "intended_use": "Private interior design concept preview of the user's own flat; not for publication."
+   }
+  }
+ ],
+ "output": {
+  "aspect_ratio": "4:3",
+  "image_size": "1K",
+  "mime_type": "image/jpeg",
+  "delivery_notes": [
+   "Viewed on a phone as a design concept."
+  ]
+ },
+ "review_tests": [
+  "Room architecture, openings and camera viewpoint match reference 1.",
+  "Floor is the same polished beige large-format tile.",
+  "No people, logos or lettering are visible.",
+  "Palette reads as ivory limewash, walnut, soft brass with sage and terracotta accents.",
+  "Far wall shows a walnut mandir with glowing brass jaali, with no posters left.",
+  "Wash-basin niche has a walnut vanity and round brass mirror."
+ ]
+}
