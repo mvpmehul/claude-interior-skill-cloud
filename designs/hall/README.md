@@ -10,10 +10,10 @@ is public. Re-attach them in the session that runs the designs.
 Calm, sunlit modern Indian home: warm ivory limewash, walnut, soft brushed brass,
 with sage and terracotta accents. The existing beige marble-look floor tiles stay.
 
-- **Living:** TV wall with a backlit honey-onyx-look panel framed by full-height
+- **Living:** TV wall on the solid right-hand wall (where the TV point is) with a backlit honey-onyx-look panel framed by full-height
   walnut fluting and a floating walnut console; curved oatmeal boucle 3-seater,
   36" round travertine coffee table on an 8x10 ft wool rug, cognac lounge chair
-  with brass floor lamp; ripple-fold ivory linen sheers (plus blackout) on the
+  with brass floor lamp in the glass corner; ripple-fold ivory linen sheers (plus blackout) on the
   sliding doors; perimeter cove ceiling at 3000K with slim spotlights; olive tree.
 - **Dining + kitchen:** 6-seat oval (about 72" x 36") travertine-top table on a
   walnut base, curved oatmeal chairs, three amber-glass pendants; central column
@@ -29,23 +29,24 @@ with sage and terracotta accents. The existing beige marble-look floor tiles sta
 
 | View | Photo to attach | Brief | Prompt |
 |---|---|---|---|
-| `living` | IMG_8799 (sliding doors left, bedroom door right), cleaned | `brief_living.json` | `prompt_living.txt` |
+| `living` | living room corner photo (two runs of glass doors meeting at the back corner, bedroom door right), as is | `brief_living.json` | `prompt_living.txt` |
 | `dining_kitchen` | IMG_8791 (kitchen opening in the middle), cleaned | `brief_dining_kitchen.json` | `prompt_dining_kitchen.txt` |
 | `dining_mandir` | IMG_8793 (poster wall, glass doors right), as is | `brief_dining_mandir.json` | `prompt_dining_mandir.txt` |
 
 The owner confirmed these are their own photos and approved sending them to
-Google Gemini for private design previews (not for publication). They asked for
-the man standing by the glass in IMG_8799 to be removed **before** sending.
+Google Gemini for private design previews (not for publication). The living
+corner photo has no people. In IMG_8791 a faint reflection of a person in the
+kitchen tiles is softened locally **before** sending.
 
 ## Run it in a new cloud session
 
 Needs `GEMINI_API_KEY` set as an environment variable in the cloud environment.
 
-1. Attach IMG_8799, IMG_8791 and IMG_8793 to the message.
-2. Remove people locally:
-   `pip install opencv-python-headless && python3 designs/hall/clean_photos.py IMG_8799 IMG_8791 OUT_DIR`
+1. Attach the living room corner photo, IMG_8791 and IMG_8793 to the message.
+2. Soften the reflection locally:
+   `pip install opencv-python-headless && python3 designs/hall/clean_photos.py IMG_8791 OUT_DIR`
 3. Plan each view (free, no Google call):
-   `designs/hall/plan.sh living OUT_DIR/living_clean.jpg` (and `dining_kitchen`
+   `designs/hall/plan.sh living LIVING_CORNER_PHOTO` (and `dining_kitchen`
    with `OUT_DIR/dining_clean.jpg`, `dining_mandir` with IMG_8793).
 4. Show the owner the plan and get approval for the paid call, then run
    `designs/hall/plan.sh VIEW PHOTO --execute APPROVAL_ID`. Approvals expire

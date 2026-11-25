@@ -9,7 +9,7 @@ here="$(cd "$(dirname "$0")" && pwd)"
 skill="$here/../../.claude/skills/banana/scripts"
 view="$1"; photo="$2"; shift 2
 case "$view" in
-  living) alias="living room photo (man removed)" ;;
+  living) alias="living room corner photo" ;;
   dining_kitchen) alias="dining and kitchen photo" ;;
   dining_mandir) alias="dining end photo" ;;
   *) echo "unknown view: $view" >&2; exit 2 ;;
